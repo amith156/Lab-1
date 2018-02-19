@@ -103,7 +103,7 @@ public class LList
 	{
 		ListCell cell;
 		int ans=0;
-		//test change
+		
 		for(cell= front; cell!=null; cell= cell.next)
 		{
 			if(c==cell.data)
@@ -146,6 +146,23 @@ public class LList
 			 cell.next=null;
 		 }
 		 
+	 }
+	 
+	 
+	 
+	 public boolean remove(char c)
+	 {
+		 ListCell cell;
+		 for(cell= front; cell!=null; cell= cell.next)
+		 {
+			 if(c==cell.data)
+			 {
+				 //setting the cell.data to null.
+			 }
+		 }
+		 
+		 
+		 return true;
 	 }
 	
 
