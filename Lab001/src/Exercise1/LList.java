@@ -103,6 +103,7 @@ public class LList
 	{
 		ListCell cell;
 		int ans=0;
+		//test change
 		for(cell= front; cell!=null; cell= cell.next)
 		{
 			if(c==cell.data)
