@@ -148,29 +148,12 @@ public class LList
 		 
 	 }
 	 
-//	public boolean remove(char c) {
-//		if (front == null)
-//			return false;
-//		else if (front.data == c) {
-//			front = front.next;
-//			return true;
-//		}
-//		ListCell ce = front;
-//		while (ce.next != null && ce.next.data != c)
-//			ce = ce.next;
-//		if (ce.next == null)
-//			return false;
-//		else {
-//			ce.next = ce.next.next;
-//			return true;
-//		}
-//	}
+
 
 	 public boolean remove(char c)
 	 {
-		 int count=0;
 		 ListCell cell = front;
-		 int rc =0;
+		 
 		 if (cell != null && cell.data == c){
 			 if (cell.next != null) front = cell.next;
 		 }
@@ -179,14 +162,10 @@ public class LList
 		 {
 			 if(cell.next!=null && c==cell.next.data)
 			 {
-				 count++;
-				 System.out.println("count = "+count);
-				 System.out.println("cell.next "+ cell.next.data +"||"+ cell.next.next.data +"cell.next.next");
 				 cell.next=cell.next.next;
 			 }
 			 cell=cell.next;
-			 rc++;
-			 System.out.println("rc= "+rc);
+			
 		 }
 		 
 		 return true;
